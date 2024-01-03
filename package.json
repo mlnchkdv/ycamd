@@ -1,0 +1,7 @@
+{
+  "name": "your-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "papaparse": "^5.3.0"
+  }
+}
