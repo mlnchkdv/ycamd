@@ -1,0 +1,15 @@
+<html>
+<head>
+    <!-- Заголовки, CSS и т.д. -->
+</head>
+<body>
+	<div class="profile">
+		<h1>{{ .Title }}</h1>
+		<img src="{{ .RelPermalink }}{{ .Params.image }}" alt="{{ .Title }}">
+		<p>Возраст: {{ .Params.age }}</p>
+		<p>Ссылка на профиль: {{ "/profiles/" | relLangURL }}{{ .Params.slug }}</p>
+		<div>{{ .Content }}</div>
+	</div>
+    <!-- Нижний колонтитул, скрипты и т.д. -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+    <!-- Заголовки, CSS и т.д. -->
+</head>
+<body>
+    <h1>Список Профилей</h1>
+    <ul>
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</body>
+</html>
