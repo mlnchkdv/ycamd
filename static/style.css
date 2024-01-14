@@ -468,7 +468,34 @@ header #navbar .logo {
     height: 500px;
     background-color: transparent;
     opacity: 0.5;
-  }
+}
+
+#contacts ul {
+    list-style: none;
+    padding-left: 0
+}
+
+#contacts ul.social li {
+    display: inline;
+    margin: 0 .55rem;
+}
+
+#contacts ul.social li a {
+    color: #05347f;
+    text-decoration: none;
+}
+
+#contacts ul.social li a svg {
+    max-width: 25px
+}
+
+#contacts ul.social li a i {
+    font-size: 34px;
+}
+
+#contacts ul.social li a:hover {
+    color: #fa496e
+}
 
 footer {
     padding: 2rem 0;
@@ -684,6 +711,7 @@ footer .logo {
 
 /* @media (min-device-width: 376px) and (max-device-width: 668px) { */
 @media (max-device-width: 668px) {
+
     /* .container {
         font-size: 3em;
     } */
