@@ -1,0 +1,111 @@
+.clock {
+    color: rgba(255, 255, 255, 0.87);
+    font-family: "PT Sans Narrow", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* height: 100vh; */
+    height: 80vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    background: #31385C;
+    mix-blend-mode: overlay;
+    line-height: 1em;
+    /* text-transform: uppercase; */
+}
+
+/* .year {
+    font-size: 12rem;
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    top: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.clock h2 {
+    color: white;
+}
+
+.clock h1 {
+    color: white;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* transform: translate(-50%, -50%); */
+    /* margin-bottom: -270px; */
+    position: absolute;
+    /* top: 1.3em; */
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+    /* Удалите отрицательный отступ, если есть */
+    font-size: 42px;
+}
+
+.countdown {
+    /* display: none;
+    transform: scale(2);
+    z-index: 1000;
+    position: relative; */
+
+
+    display: flex;
+    flex-wrap: wrap;
+    /* Добавьте обертку для элементов таймера */
+    justify-content: center;
+    /* Выравнивание элементов по центру */
+    position: absolute;
+    /* Позиционируйте таймер абсолютно внутри .clock */
+    top: 50%;
+    /* Переместите таймер на 50% от верхней границы .clock */
+    left: 50%;
+    /* Переместите таймер на 50% от левой границы .clock */
+    transform: translate(-50%, -50%) scale(2);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25rem;
+    color: white;
+}
+
+.time h2 {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.time p {
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+    color: white !important;
+}
+
+@media (min-width: 640px) {
+    /* h1 {
+        font-size: 3.5rem;
+    } */
+
+    .time {
+        margin: 1rem;
+    }
+
+    .time h2 {
+        font-size: 1.5rem;
+        margin: 0 0 5px;
+    }
+
+    .time p {
+        font-size: 1rem;
+    }
+}
