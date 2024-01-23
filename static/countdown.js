@@ -8,7 +8,7 @@ const loading = document.getElementById("loading");
 
 // const nextYear = new Date().getFullYear() + 1;
 // const newYearTime = new Date(`March 15 ${nextYear} 00:00:00`);
-const newYearTime = new Date(`March 15 2024 10:00:00`);
+const newYearTime = new Date(`May 22 2024 10:00:00`);
 
 function updateCountdown() {
   const currentTime = new Date();
