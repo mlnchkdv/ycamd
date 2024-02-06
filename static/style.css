@@ -308,7 +308,8 @@ p {
 
 .kicker {
     text-transform: uppercase;
-    color: #fa496e;
+    /* color: #fa496e; */
+    color: #2222ff;
     font-weight: 400;
     font-size: .85rem !important;
     letter-spacing: 1px;
@@ -494,7 +495,8 @@ header #navbar .logo {
 }
 
 #contacts ul.social li a:hover {
-    color: #fa496e
+    /* color: #fa496e */
+    color: #2222ff;
 }
 
 footer {
@@ -547,7 +549,8 @@ footer ul.social li a i {
 }
 
 footer ul.social li a:hover {
-    color: #fa496e
+    /* color: #fa496e; */
+    color: #2222ff;
 }
 
 footer .logo {
@@ -1373,7 +1376,8 @@ footer .logo {
 }
 
 .accordion .a-container .a-btn:hover {
-    color: #fa496e
+    /* color: #fa496e */
+    color: #2222ff;
 }
 
 .accordion .a-container .a-btn span {
@@ -1418,7 +1422,8 @@ footer .logo {
 }
 
 .accordion .a-container.active .a-btn {
-    color: #fa496e
+    /* color: #fa496e */
+    color: #2222ff;
 }
 
 .accordion .a-container.active .a-btn span::before {
@@ -1457,7 +1462,8 @@ footer .logo {
 }
 
 .btn:focus {
-    outline: 2px solid #fa496e
+    /* outline: 2px solid #fa496e */
+    outline: 2px solid #2222ff;
 }
 
 .btn.full-width {
@@ -1466,24 +1472,32 @@ footer .logo {
 
 .btn.btn-primary {
     color: #fff;
-    background-color: #fa496e;
-    border-color: #fa496e
+    /* background-color: #fa496e; */
+    /* border-color: #fa496e */
+    background-color: #2222ff;
+    border-color: #2222ff;
 }
 
 .btn.btn-primary:hover {
-    background-color: #f91746;
-    border-color: #f91746
+    /* background-color: #f91746; */
+    /* border-color: #f91746; */
+    background-color: #0000ad;
+    border-color: #0000ad;
 }
 
 .btn.btn-secondary {
-    color: #fa496e;
+    /* color: #fa496e; */
+    color: #2222ff;
     background-color: rgba(0, 0, 0, 0);
-    border-color: #fa496e
+    /* border-color: #fa496e; */
+    border-color: #2222ff;
 }
 
 .btn.btn-secondary:hover {
-    background-color: #fa496e;
-    border-color: #fa496e;
+    /* background-color: #fa496e; */
+    /* border-color: #fa496e; */
+    background-color: #2222ff;
+    border-color: #2222ff;
     color: #fff
 }
 
@@ -1555,7 +1569,8 @@ footer .logo {
 
 #navbar ul li.active:before {
     content: "";
-    background: #fa496e;
+    /* background: #fa496e; */
+    background: #2222ff;
     position: absolute;
     bottom: -1.5rem;
     width: 100%;
@@ -1571,7 +1586,8 @@ footer .logo {
 }
 
 #navbar ul li a:hover {
-    color: #fa496e
+    /* color: #fa496e; */
+    color: #2222ff;
 }
 
 @media all and (max-width: 600px) {
