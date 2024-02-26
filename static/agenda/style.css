@@ -1,0 +1,175 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.box {
+  max-width: 75em;
+  margin: 1em auto;
+}
+
+.infoTable {
+  overflow-x: auto;
+  margin: 1em 0;
+  text-align: left;
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 1.125em;
+  line-height: 1.1;
+  border-collapse: collapse;
+  color: #6D6D6D;
+  max-width: 100%;
+  width: auto;
+  margin: 1em;
+}
+.infoTable tr td:first-child {
+  font-size: 1.625em;
+  border-right: none;
+  /* color: #007ACA; */
+  color: #05347f;
+  padding: 1em 0.3125em 0.625em 0;
+}
+.infoTable tr td:last-child {
+  border-right: none;
+}
+.infoTable td {
+  padding: 1em;
+  border-bottom: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+}
+.infoTable td[class*=track] {
+  width: 30%;
+  position: relative;
+}
+.infoTable td[class*=track] span {
+  display: none;
+}
+.infoTable .infoTable-multitrack td:nth-child(2),
+.infoTable .infoTable-controls td:nth-child(3),
+.infoTable .infoTable-controls td:nth-child(4) {
+  width: 30%;
+}
+.infoTable .trackName {
+  display: none;
+}
+
+/*Collapsable mobile table if js enabled*/
+@media screen and (max-width: 47.9375em) {
+  .isJs-template .infoTable td {
+    border-right: none;
+  }
+  .isJs-template .infoTable-btn {
+    cursor: pointer;
+  }
+  .isJs-template .infoTable-btn span,
+.isJs-template .infoTable-btn a {
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1.4444444444em;
+  }
+  .isJs-template td:empty {
+    display: inherit;
+    border-bottom: none;
+  }
+  .isJs-template .infoTable-multitrack td:nth-child(2),
+.isJs-template .infoTable-multitrack td:nth-child(3),
+.isJs-template .infoTable-multitrack td:nth-child(4) {
+    padding-left: 2em;
+    opacity: 0;
+    width: 0;
+    display: none;
+  }
+  .isJs-template .infoTable-multitrack td:nth-child(2).showTableCol,
+.isJs-template .infoTable-multitrack td:nth-child(3).showTableCol,
+.isJs-template .infoTable-multitrack td:nth-child(4).showTableCol {
+    display: table-cell !important;
+    width: 100% !important;
+    opacity: 1 !important;
+  }
+  .isJs-template .infoTable-btn {
+    padding: 0;
+    border: none;
+  }
+  .isJs-template .infoTable-btn p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 2em;
+    margin: 0;
+    flex: 1 1 33%;
+  }
+  .isJs-template .infoTable-btn span {
+    display: block;
+    border-bottom: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    text-align: center;
+    padding: 10px 12px 8px 12px;
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .isJs-template .infoTable-btn span:last-child {
+    border-right: none;
+  }
+  @supports (display: grid) {
+    .isJs-template .infoTable-btn p {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+    }
+    .isJs-template .infoTable-btn span {
+      width: auto;
+    }
+  }
+  .isJs-template .infoTable-tab--active {
+    /* color: #007ACA; */
+    color: #05347f;
+    border-bottom: none !important;
+  }
+}
+.isJs-template tfoot td {
+  border-top: 1px solid #d6d6d6;
+}
+
+@media screen and (min-width: 47.9375em) {
+  .infoTable-controls {
+    display: none;
+  }
+
+  .infoTable {
+    table-layout: fixed;
+    text-align: center;
+  }
+  .infoTable td {
+    vertical-align: middle;
+    padding: 0.8888888889em;
+  }
+  .infoTable .trackName {
+    display: inline-block;
+    /* position: absolute; */
+    /* width: 100px; */
+    color: #fff;
+    /* background: #62A5F2; */
+    background: #05347f;
+    /* top: 0; */
+    /* left: 50%; */
+    transform: translateX(-50%);
+    /* padding-top: 5px; */
+    padding: 0.3em 0.7em;
+    /* height: 19px; */
+    line-height: 1;
+    font-size: 14px;
+    border-radius: 15px;
+    /* margin-top: 0.2em; */
+  }
+  .infoTable .trackName + span {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .infoTable-btn {
+    display: none;
+  }
+
+  tbody td {
+    position: relative;
+  }
+}
